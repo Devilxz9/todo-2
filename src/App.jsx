@@ -101,7 +101,7 @@ function App() {
             <button onClick={handleAdd} disabled={todo.length < 1} className='bg-purple-500/50 border border-purple-300/20 
     rounded-2xl px-6 h-12 text-white font-medium 
     hover:bg-purple-600/70 hover:shadow-[0_0_15px_#a855f7] 
-    disabled:opacity-50 transition'>Save</button>
+    disabled:opacity-50 transition'>Save it</button>
           </div>
           <label className="text-white max-md:text-[39px]  text-[23px] flex justify-center items-center mt-4 mr-90">
             <input className='h-5 w-10 max-md:w-10 max-md:mr-4 max-md:h-13 pt-20 accent-purple-700' onChange={togglefinished} type="checkbox" checked={showfinished} /> Show Finsihed
@@ -110,7 +110,7 @@ function App() {
           <div className="contianer2 overflow-y-scroll bg-white/55 w-160 h-100 flex rounded-xl md:ml-[311px] max-md:ml-[145px] max-md:h-300 mt-4 backdrop-blur-lg border border-white/20 shadow-inner">
             <div className={`todos ${todos.length === 0 && "flex flex-col items-center ml-45"}`}>
               {todos.length === 0 && <div className='w-70 h-70'><img src="src/assets/empty.jpg" alt="" /></div>}
-              {todos.length === 0 && <div className='text-2xl '>Your Todo list is empty</div>}
+              {todos.length === 0 && <div className='text-2xl '>Your Todo list is empty!</div>}
               {todos.map(item => {
 
 
